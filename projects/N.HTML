@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #64f469;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .notepad-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .notepad-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .notepad-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .icon-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon-buttons i {
+            font-size: 20px;
+            color: #555;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .icon-buttons i:hover {
+            color: #00fbff;
+        }
+
+        textarea {
+            width: 100%;
+            height: 350px;
+            border: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            resize: none;
+            outline: none;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .notepad-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .save-button {
+            background-color: #111211;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .save-button:hover {
+            background-color: #65d3fb;
+        }
+        
+  .option {
+    width: 20%;
+
+  }
+  .toolbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #130ce3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+    </style>
+</head>
+<body>
+
+    <div style="display: flex;" class="toolbar">
+        <button>New</button>
+        <button>Save</button>
+        <button>Print</button>
+        <button style="background-color: #fe5906;">Yellow</button>
+        <button style="background-color: #972bfd;">Light Blue</button>
+        <button style="background-color: #f41616;">Light Green</button>
+        <button>Cut</button>
+        <button>Copy</button>
+        <button>Paste</button>
+        <button style="font-family: Arial;">Arial</button>
+        <button style="font-family: Verdana;">Verdana</button>
+        <button style="font-family: 'Times New Roman';">Times New Roman</button>
+  
+      </div>
+
+<div class="notepad-container">
+    <div class="notepad-header">
+        <div class="notepad-title">notes</div>
+        <div class="icon-buttons">
+            <i class="fas fa-bold" title="غليظ"></i>
+            <i class="fas fa-italic" title="مائل"></i>
+            <i class="fas fa-underline" title="تسطير"></i>
+            <i class="fas fa-align-left" title="محاذاة لليسار"></i>
+            <i class="fas fa-align-center" title="محاذاة للوسط"></i>
+            <i class="fas fa-align-right" title="محاذاة لليمين"></i>
+        </div>
+    </div>
+
+    <textarea placeholder="write your note......."></textarea>
+
+    <div class="notepad-footer">
+        <span>num of word: 0</span>
+        <button class="save-button">save</button>
+    </div>
+</div>
+<div class="option">
+
+
+</body>
+</html>
